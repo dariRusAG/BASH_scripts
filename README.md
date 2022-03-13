@@ -44,4 +44,4 @@ sort file_3.txt | uniq -c && sort -u file_3.txt -o file_3.txt
 Запуск
 ```./script.sh (имя) ```
 
-'Имя' по условию - DASHA
+```(имя)``` по условию - DASHA
