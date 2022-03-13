@@ -45,3 +45,7 @@ sort file_3.txt | uniq -c && sort -u file_3.txt -o file_3.txt
 ```./script.sh (имя) ```
 
 ```(имя)``` по условию - DASHA
+
+### Результат
+![result](https://user-images.githubusercontent.com/91362737/158049818-8e9d3b25-e8a3-412d-8015-56239220c3b8.png)
+
