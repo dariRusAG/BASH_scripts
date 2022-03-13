@@ -14,7 +14,9 @@
 *Отчет*
 Репозиторий на GitHub, с исходным текстовым файлом и файлами, полученными во время выполнения команд, файл README.md с командой для BASH и скриншот результата вывода данной команды для исходного файла.
 
-### Команды
+### Команда
 ```tail -n 40 file_1.txt > file_2.txt && head -n 10 file_2.txt > file_3.txt```
+
 ```grep коко file_2.txt > file.txt && sed 's/коко/куку/g' file.txt | head -n 3 >> file_3.txt```
+
 ```sort file_3.txt | uniq -c && sort -u file_3.txt -o file_3.txt```
