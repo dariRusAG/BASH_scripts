@@ -1,0 +1,140 @@
+\var\www\html\test - переход
+В конце команд название файла
+
+tldr - справка по команде, все остальные команды 
+(cut и все производные - вырезает поля) 
+или tldr команда
+
+grep "поиск" - поиск по регулярке (b. - слова начинающиеся с b)
+	флаги:
+--only-natching "поиск" 
+--only-natching --ignore-case "поиск" 
+
+sed 'слово' - замена по регулярке 
+
+head - выводит начало файла (10 строк)
+	флаги:
+--help
+-n
+
+tail - выводит конец файла
+
+sort - сортировка строк
+	флаги:
+--ignore-case
+--ignore-case reverse
+--ignore-case файл | uniq -d или -c или -u
+
+uniq - уникальные строки (без сорта - быдло)
+
+nano - изменение файла
+
+awk '(print $1,53)' файл - работа (обычно print) с табличным представлением файла 
+	флаги:
+-F ','
+
+less - смотреть файл (скролл)
+
+more - смотреть файл тоже (по страницам)
+
+cat - выводит файлик на экран
+	флаги:
+-n
+-n -v -t -e
+| sed -r 's/ /_/' (замена пробела на нижнее подчеркивание)
+| sed -r 's/ /_/g'
+
+wc - выводит количество
+	флаги:
+-l
+-w
+-c
+-n
+
+column -t - выводит колонки 
+	флаги:
+-s',' --output-width 30
+
+jq (путь) - выводит json с подсветкой
+
+pwd - в какой я сейчас папке
+
+find - поиск по директориии 
+
+file - информация о файле
+
+uniq -s (уникальная строка для дз)
+...........
+
+bash scripts
+
+export a=5
+echo $5
+b="my_var"
+echo $b
+echo $b ls $a
+exit
+echo $b ls $a
+nano -/.bash
+nano -/.bashrc
+exit
+echo $b ls $a
+export a=5
+b="my_var"
+export a=5
+echo $b ls $a
+exit
+echo $b ls $a
+nano -/.bashrc
+echo Hello! My name is Sname I\'m Sage
+source -/.bashrc
+cat /etc/profile.d/apps-bin-path.sh
+echo $PATH //хранит путь
+which cat // где файл
+which jq
+
+
+touch script.sh  // Создание файла
+ls -la
+nano script.sh // Редактирование текстовика bash
+./script echo $name.sh Vova 22
+cat script.sh
+echo $name
+echo $age
+./script.sh
+name=Vova ./script.sh
+
+find . -name '*.sh'
+find . -name '*.txt'
+find . -name '*.sh' -not -name '*script*'
+find . type f
+find . type d
+find . -name '*.txt' -exec wc -l () \;
+
+(внутри пишем код)
+#!/bin/bash
+echo Hello
+echo My name is $1 // переменная
+if [$name === 'Vova']; 
+	then echo 'I work in Drom';
+fi
+echo Im $age
+...........
+
+a="my var"
+export b=5
+echo $a is $b
+source ~/.bachrc // Обновляет файлы
+echo $PATH
+which php // Где файл
+
+touch my_info.sh  // Создание файла
+chmod +x my_info.sh // Даём разрешения
+
+
+
+#!/bin/sh  // Шабанг
+$1 	   // Первый параметр 
+$my_name   // Переменная окружения 
+
+my_name=Viva ./my_info.sh   // Меняем переменную для конкретного запуска
